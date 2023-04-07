@@ -6,7 +6,7 @@ let rec prime_rec = function
   | (1, n) -> false 
   | (k, n) -> (n % k = 0) || prime_rec(k - 1, n) 
 
-let rec prime = function 
+let prime = function 
   | 1 -> false 
   | 2 -> true 
   | n -> not (prime_rec(n / 2, n)) 
