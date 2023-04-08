@@ -19,4 +19,4 @@ let occFromIth (s, n, c) =
         | (n, c, acc) when n < 0 -> 0
         | (n, c, acc) when c = s.[n] -> check (n + 1, c, acc + 1)
         | (n, c, acc) -> check (n + 1, c, acc)
-    check (n, c, 0).
+    check (n, c, 0)
